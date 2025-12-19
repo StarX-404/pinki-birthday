@@ -582,8 +582,18 @@
             position: relative;
             margin: 0 auto;
             animation: frameGlow 3s infinite alternate;
+            background: white;  /* ADD THIS LINE */
+    display: flex;      /* ADD THIS LINE */
+    align-items: center; /* ADD THIS LINE */
+    justify-content: center; /* ADD THIS LINE */
         }
-
+/* Add this NEW CSS after .photo-frame */
+.photo-frame img {
+    max-width: 90%;     /* CHANGED from 100% */
+    max-height: 90%;    /* CHANGED from 100% */
+    object-fit: contain; /* CHANGED from cover */
+    border-radius: 50%;
+}
         @keyframes frameGlow {
             0% { box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15), 0 0 0 15px rgba(255, 214, 103, 0.2); }
             100% { box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2), 0 0 0 20px rgba(255, 214, 103, 0.3); }
