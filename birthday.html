@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Butterfly 🦋</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500&family=Great+Vibes&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --baby-pink: #ffd6e7;
+            --blush: #ff9ec0;
+            --soft-pink: #ff7eb3;
+            --gold: #ffd166;
+            --rose-gold: #e8b4bc;
+            --white: #fff9fb;
+            --text: #5a3a4a;
+            --light-gold: #fff5e6;
+            --butterfly-blue: #89CFF0;
+            --butterfly-purple: #C9A0DC;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ffd6e7 0%, #ffe6f0 50%, #fff9fb 100%);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* Animated Butterfly Background */
+        .butterfly-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .butterfly {
+            position: absolute;
+            font-size: 24px;
+            opacity: 0.4;
+            animation: butterflyFly 20s infinite linear;
+            filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+        }
+
+        @keyframes butterflyFly {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            25% { transform: translate(100px, 50px) rotate(10deg); }
+            50% { transform: translate(50px, 100px) rotate(0deg); }
+            75% { transform: translate(-50px, 50px) rotate(-10deg); }
+            100% { transform: translate(0, 0) rotate(0deg); }
+        }
+
+        /* Love Progress Bar */
+        .love-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.2);
+            z-index: 1000;
+        }
+
+        .love-progress-bar {
+            height: 100%;
+            background: linear-gradient(to right, var(--blush), var(--soft-pink), var(--butterfly-blue));
+            width: 0%;
+            transition: width 0.3s ease;
+            border-radius: 0 10px 10px 0;
+        }
+
+        /* Container */
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Enhanced Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            padding: 20px;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            background: rgba(255, 255, 255, 0.92);
+            padding: 40px 30px;
+            border-radius: 40px;
+            box-shadow: 
+                0 20px 40px rgba(255, 126, 179, 0.2),
+                0 0 60px rgba(255, 214, 103, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(15px);
+            max-width: 700px;
+            width: 90%;
+            margin: 0 auto;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            animation: gentlePulse 4s infinite alternate;
+        }
+
+        @keyframes gentlePulse {
+            0% { box-shadow: 0 20px 40px rgba(255, 126, 179, 0.2), 0 0 60px rgba(255, 214, 103, 0.1); }
+            100% { box-shadow: 0 25px 50px rgba(255, 126, 179, 0.3), 0 0 80px rgba(255, 214, 103, 0.2); }
+        }
+
+        .hero h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 4.5rem;
+            background: linear-gradient(45deg, var(--soft-pink), var(--butterfly-blue));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 20px;
+            text-shadow: 0 5px 15px rgba(255, 126, 179, 0.3);
+            animation: textGlow 2s infinite alternate;
+        }
+
+        @keyframes textGlow {
+            from { text-shadow: 0 5px 15px rgba(255, 126, 179, 0.3); }
+            to { text-shadow: 0 5px 25px rgba(255, 126, 179, 0.5), 0 0 30px rgba(255, 214, 103, 0.4); }
+        }
+
+        .butterfly-nickname {
+            font-family: 'Sacramento', cursive;
+            font-size: 3.5rem;
+            color: var(--butterfly-purple);
+            margin: 10px 0;
+            text-shadow: 0 2px 10px rgba(201, 160, 220, 0.3);
+            animation: floatNickname 3s infinite ease-in-out;
+        }
+
+        @keyframes floatNickname {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .subtitle {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--text);
+            margin-bottom: 40px;
+            font-weight: 500;
+            line-height: 1.4;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .subtitle:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 2px;
+            background: linear-gradient(to right, transparent, var(--butterfly-blue), transparent);
+        }
+
+        .begin-btn {
+            background: linear-gradient(45deg, var(--blush), var(--butterfly-blue));
+            color: white;
+            border: none;
+            padding: 18px 50px;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            box-shadow: 
+                0 10px 20px rgba(255, 126, 179, 0.4),
+                0 0 0 0 rgba(255, 126, 179, 0.7);
+            font-family: 'Poppins', sans-serif;
+            margin-top: 30px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .begin-btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: 0.5s;
+            z-index: -1;
+        }
+
+        .begin-btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 
+                0 15px 30px rgba(255, 126, 179, 0.5),
+                0 0 0 10px rgba(255, 126, 179, 0.1);
+        }
+
+        .begin-btn:hover:before {
+            left: 100%;
+        }
+
+        .birthday-date {
+            font-size: 1.3rem;
+            color: var(--soft-pink);
+            margin-top: 30px;
+            font-weight: 500;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px 25px;
+            border-radius: 30px;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Birthday Cake Section */
+        .cake-section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            position: relative;
+        }
+
+        .cake-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 30px auto;
+        }
+
+        .cake {
+            position: absolute;
+            width: 250px;
+            height: 120px;
+            background: linear-gradient(to bottom, #f8c8dc, #ff9ec0);
+            border-radius: 50% 50% 0 0;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            z-index: 2;
+        }
+
+        .cake:before {
+            content: '';
+            position: absolute;
+            width: 280px;
+            height: 30px;
+            background: linear-gradient(to bottom, #ffd166, #ffb347);
+            border-radius: 15px;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .cake:after {
+            content: '';
+            position: absolute;
+            width: 220px;
+            height: 80px;
+            background: linear-gradient(to bottom, #fff9fb, #ffe6f0);
+            border-radius: 50% 50% 0 0;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+        }
+
+        .candle {
+            position: absolute;
+            width: 8px;
+            height: 50px;
+            background: linear-gradient(to bottom, #ff7eb3, #ffd166);
+            border-radius: 4px;
+            bottom: 170px;
+            z-index: 4;
+            transition: all 0.3s ease;
+        }
+
+        .flame {
+            position: absolute;
+            width: 15px;
+            height: 25px;
+            background: linear-gradient(to bottom, #ffd166, #ff7eb3);
+            border-radius: 50% 50% 20% 20%;
+            bottom: 215px;
+            z-index: 5;
+            animation: flicker 0.5s infinite alternate;
+            box-shadow: 0 0 20px #ffd166, 0 0 40px #ff7eb3;
+        }
+
+        @keyframes flicker {
+            0%, 100% { transform: scale(1) rotate(-2deg); }
+            50% { transform: scale(1.1) rotate(2deg); }
+        }
+
+        .blown {
+            opacity: 0.3;
+            transform: scale(0.8);
+        }
+
+        .blown .flame {
+            display: none;
+        }
+
+        .blow-btn {
+            background: linear-gradient(45deg, var(--butterfly-blue), var(--butterfly-purple));
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(137, 207, 240, 0.3);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .blow-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px rgba(137, 207, 240, 0.4);
+        }
+
+        .cut-cake-btn {
+            background: linear-gradient(45deg, var(--gold), #ff7eb3);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(255, 214, 103, 0.3);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .cut-cake-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px rgba(255, 214, 103, 0.4);
+        }
+
+        .cake-cut {
+            animation: cakeSlice 1s ease forwards;
+        }
+
+        @keyframes cakeSlice {
+            0% { transform: translateX(-50%) rotate(0deg); }
+            100% { transform: translateX(-50%) translateY(100px) rotate(-10deg); opacity: 0.8; }
+        }
+
+        .wish-message {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            color: var(--soft-pink);
+            text-align: center;
+            margin: 30px 0;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 1s ease;
+        }
+
+        .wish-message.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .signature-you {
+            font-family: 'Sacramento', cursive;
+            font-size: 2.8rem;
+            color: var(--butterfly-purple);
+            text-align: right;
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeInSignature 2s ease 3s forwards;
+        }
+
+        @keyframes fadeInSignature {
+            to { opacity: 1; }
+        }
+
+        /* Fireworks */
+        .firework {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 100;
+        }
+
+        /* Memory Lane */
+        .memory-lane {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 600px;
+            margin: 40px auto;
+        }
+
+        .memory-moment {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid var(--butterfly-blue);
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.8s ease;
+        }
+
+        .memory-moment.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .memory-moment:nth-child(even) {
+            border-left-color: var(--soft-pink);
+            transform: translateX(50px);
+        }
+
+        /* Gift Box */
+        .gift-box {
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(45deg, var(--blush), var(--butterfly-blue));
+            margin: 30px auto;
+            position: relative;
+            border-radius: 10px;
+            cursor: pointer;
+            transform-style: preserve-3d;
+            transition: transform 1s ease;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .gift-box:hover {
+            transform: rotateY(15deg) rotateX(15deg);
+        }
+
+        .gift-box.open {
+            transform: rotateY(180deg) scale(1.1);
+        }
+
+        .gift-lid {
+            position: absolute;
+            width: 160px;
+            height: 40px;
+            background: linear-gradient(45deg, var(--soft-pink), var(--butterfly-purple));
+            top: -20px;
+            left: -5px;
+            border-radius: 10px;
+        }
+
+        .gift-content {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--soft-pink);
+            backface-visibility: hidden;
+            transform: rotateY(180deg);
+            padding: 20px;
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        /* Countdown */
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .countdown-item {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 15px;
+            min-width: 80px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .countdown-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--butterfly-purple);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .countdown-label {
+            font-size: 0.9rem;
+            color: var(--text);
+            opacity: 0.7;
+            margin-top: 5px;
+        }
+
+        /* Section Styles */
+        .section {
+            min-height: 100vh;
+            padding: 80px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .section.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .section-title {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            color: var(--soft-pink);
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(to right, transparent, var(--butterfly-blue), transparent);
+        }
+
+        /* Photo Frame */
+        .photo-frame {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 10px solid white;
+            box-shadow: 
+                0 20px 40px rgba(0, 0, 0, 0.15),
+                0 0 0 15px rgba(255, 214, 103, 0.2),
+                0 0 0 30px rgba(137, 207, 240, 0.1);
+            position: relative;
+            margin: 0 auto;
+            animation: frameGlow 3s infinite alternate;
+        }
+
+        @keyframes frameGlow {
+            0% { box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15), 0 0 0 15px rgba(255, 214, 103, 0.2); }
+            100% { box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2), 0 0 0 20px rgba(255, 214, 103, 0.3); }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text);
+            font-size: 0.9rem;
+            background: rgba(255, 255, 255, 0.9);
+            margin-top: 40px;
+            border-radius: 40px 40px 0 0;
+        }
+
+        /* Music Player */
+        .music-player {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 100;
+            background: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            color: var(--soft-pink);
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .music-player:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 3.2rem; }
+            .butterfly-nickname { font-size: 2.8rem; }
+            .subtitle { font-size: 1.4rem; }
+            .cake-container { transform: scale(0.8); }
+            .section-title { font-size: 2.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Love Progress Bar -->
+    <div class="love-progress">
+        <div class="love-progress-bar" id="loveProgress"></div>
+    </div>
+
+    <!-- Butterfly Background -->
+    <div class="butterfly-bg" id="butterflyBg"></div>
+
+    <!-- Music Player -->
+    <div class="music-player" id="musicToggle">
+        <i class="fas fa-music"></i>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-dots">
+        <div class="dot active" data-section="0"></div>
+        <div class="dot" data-section="1"></div>
+        <div class="dot" data-section="2"></div>
+        <div class="dot" data-section="3"></div>
+        <div class="dot" data-section="4"></div>
+        <div class="dot" data-section="5"></div>
+        <div class="dot" data-section="6"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero active" id="section0">
+        <div class="hero-content">
+            <h1>Happy Birthday</h1>
+            <div class="butterfly-nickname">My Beautiful Butterfly 🦋</div>
+            <p class="subtitle">The day my world became colorful because of you 🌈</p>
+            <button class="begin-btn" id="beginBtn">
+                <i class="fas fa-heart" style="margin-right: 10px;"></i>
+                Fly With Me to Your Celebration 💕
+            </button>
+            <p class="birthday-date">Born on 27.12.2003 ✨ My favorite day in history</p>
+        </div>
+    </section>
+
+    <!-- Why She's Special -->
+    <section class="section" id="section1">
+        <div class="container">
+            <h2 class="section-title">To My Butterfly 🦋</h2>
+            <div class="special-container">
+                <div class="photo-frame">
+                    <img src="pinki.jpg" alt="My Beautiful Butterfly" id="pinkiPhoto">
+                </div>
+                <div class="special-text" style="max-width: 500px; margin: 0 auto;">
+                    <p><i class="fas fa-star" style="color: var(--gold); margin-right: 10px;"></i> You bring color to my monochrome days 🌈</p>
+                    <p><i class="fas fa-star" style="color: var(--gold); margin-right: 10px;"></i> Your wings have healed places I didn't know were broken 🦋</p>
+                    <p><i class="fas fa-star" style="color: var(--gold); margin-right: 10px;"></i> You taught my heart how to fly again 💫</p>
+                    <p><i class="fas fa-star" style="color: var(--gold); margin-right: 10px;"></i> With you, every season feels like spring 🌸</p>
+                    <p><i class="fas fa-star" style="color: var(--gold); margin-right: 10px;"></i> You're the most beautiful transformation I've ever witnessed ✨</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Birthday Cake Celebration -->
+    <section class="section cake-section" id="section2">
+        <div class="container">
+            <h2 class="section-title">Make a Wish, My Love 🎂</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 30px; max-width: 600px; margin: 0 auto 30px;">
+                Blow out your candles and cut your birthday cake! Make all your dreams come true 💫
+            </p>
+            
+            <div class="cake-container">
+                <div class="cake" id="birthdayCake"></div>
+                <!-- Candles will be added by JavaScript -->
+            </div>
+            
+            <button class="blow-btn" id="blowBtn">
+                <i class="fas fa-wind" style="margin-right: 10px;"></i>
+                Blow Out All Candles 🕯️
+            </button>
+            
+            <button class="cut-cake-btn" id="cutCakeBtn" style="display: none;">
+                <i class="fas fa-utensils" style="margin-right: 10px;"></i>
+                Cut the Birthday Cake 🍰
+            </button>
+            
+            <div class="wish-message" id="wishMessage">
+                Happy Birthday, my beautiful Butterfly! May all your dreams take flight 🦋💖
+            </div>
+            
+            <div class="signature-you" id="signature">
+                Forever yours,<br>You Know Who 💝
+            </div>
+        </div>
+    </section>
+
+    <!-- Memories Lane -->
+    <section class="section" id="section3">
+        <div class="container">
+            <h2 class="section-title">Our Flight Together ✨</h2>
+            <div class="memory-lane">
+                <div class="memory-moment">
+                    <h3><i class="fas fa-heart" style="color: var(--soft-pink); margin-right: 10px;"></i> The First Time</h3>
+                    <p>The moment I realized my heart had grown wings when I met you 🦋</p>
+                </div>
+                <div class="memory-moment">
+                    <h3><i class="fas fa-laugh" style="color: var(--gold); margin-right: 10px;"></i> Your Magical Laugh</h3>
+                    <p>The sound that makes my soul dance - your laughter is my favorite melody 🎶</p>
+                </div>
+                <div class="memory-moment">
+                    <h3><i class="fas fa-hands" style="color: var(--butterfly-blue); margin-right: 10px;"></i> Holding Hands</h3>
+                    <p>How your hand fits perfectly in mine, like two puzzle pieces finding home 🧩</p>
+                </div>
+                <div class="memory-moment">
+                    <h3><i class="fas fa-home" style="color: var(--blush); margin-right: 10px;"></i> Our Safe Space</h3>
+                    <p>With you, anywhere feels like home - you're my favorite place to be 🏡</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Letter -->
+    <section class="section" id="section4">
+        <div class="container">
+            <h2 class="section-title">Whispers to My Butterfly 💌</h2>
+            <div class="letter-container" style="max-width: 700px; margin: 0 auto; background: rgba(255, 255, 255, 0.95); padding: 40px; border-radius: 30px; box-shadow: 0 20px 40px rgba(255, 126, 179, 0.15);">
+                <div class="letter-content" id="loveLetter">
+                    <p style="font-family: 'Great Vibes', cursive; font-size: 2rem; color: var(--butterfly-purple); margin-bottom: 30px; text-align: center;">
+                        My Dearest Butterfly,
+                    </p>
+                    
+                    <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 20px; text-align: center;">
+                        If I could capture sunlight in my hands, it would pale in comparison to your smile.<br>
+                        If I could collect all the stars, they wouldn't shine as bright as your eyes.<br>
+                        You are the most beautiful transformation I've ever witnessed. 🦋
+                    </p>
+                    
+                    <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 20px; text-align: center;">
+                        I may not be perfect, but my love for you is the truest thing I know.<br>
+                        Every moment with you feels like a butterfly's gentle touch - soft, magical, unforgettable.<br>
+                        I promise to cherish every flap of your beautiful wings. ✨
+                    </p>
+                    
+                    <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 30px; text-align: center;">
+                        Happy Birthday to the girl who taught my heart how to fly.<br>
+                        May your wings carry you to every dream, and may I be there to witness your beautiful flight. 🌈
+                    </p>
+                    
+                    <div style="text-align: right; margin-top: 40px;">
+                        <p style="font-family: 'Sacramento', cursive; font-size: 2.5rem; color: var(--butterfly-purple);">
+                            With all my love,<br>
+                            <span style="font-size: 3rem;">You Know Who 💝</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gift & Countdown -->
+    <section class="section" id="section5">
+        <div class="container">
+            <h2 class="section-title">Your Birthday Surprise 🎁</h2>
+            
+            <div style="text-align: center; margin-bottom: 40px;">
+                <p style="font-size: 1.3rem; margin-bottom: 30px;">A special gift for my special Butterfly 🦋</p>
+                
+                <div class="gift-box" id="giftBox">
+                    <div class="gift-lid"></div>
+                    <div class="gift-content">
+                        My endless love for you, Butterfly 💖<br>
+                        - You Know Who
+                    </div>
+                </div>
+                
+                <p style="margin-top: 20px; font-size: 1.1rem; color: var(--text); opacity: 0.8;">
+                    Tap the gift box to open your surprise!
+                </p>
+            </div>
+            
+            <div style="text-align: center; margin-top: 50px;">
+                <h3 style="font-family: 'Playfair Display', serif; color: var(--soft-pink); margin-bottom: 20px;">
+                    Until Your Next Birthday ⏳
+                </h3>
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="days">0</div>
+                        <div class="countdown-label">Days</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="hours">0</div>
+                        <div class="countdown-label">Hours</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="minutes">0</div>
+                        <div class="countdown-label">Minutes</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="seconds">0</div>
+                        <div class="countdown-label">Seconds</div>
+                    </div>
+                </div>
+                <p style="margin-top: 20px; font-size: 1.1rem; color: var(--text);">
+                    Counting the moments until I can celebrate you again! 💕
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Celebration -->
+    <section class="section" id="section6">
+        <div class="container">
+            <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+                <h2 class="section-title">Happy 21st Birthday! 🎉</h2>
+                
+                <div style="background: rgba(255, 255, 255, 0.95); padding: 40px; border-radius: 30px; box-shadow: 0 20px 40px rgba(255, 126, 179, 0.15);">
+                    <p style="font-size: 1.5rem; margin-bottom: 30px; font-family: 'Playfair Display', serif;">
+                        My dearest Butterfly, 🦋
+                    </p>
+                    
+                    <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 20px;">
+                        Today isn't just about celebrating your birth.<br>
+                        It's about celebrating <strong>you</strong> - the incredible, beautiful soul you are.<br>
+                        The girl who turns ordinary moments into magic. ✨
+                    </p>
+                    
+                    <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 20px;">
+                        Thank you for being the colors in my sky,<br>
+                        The melody in my silence,<br>
+                        The wings to my grounded heart. 💖
+                    </p>
+                    
+                    <div style="margin: 40px 0;">
+                        <div style="font-size: 2.5rem; color: var(--butterfly-purple); font-family: 'Sacramento', cursive;">
+                            🦋 Happy Birthday, My Butterfly! 🦋
+                        </div>
+                        <div style="font-size: 1.8rem; color: var(--soft-pink); margin-top: 10px; font-family: 'Dancing Script', cursive;">
+                            May your 21st year be as beautiful as you are
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 40px; padding-top: 30px; border-top: 2px dashed var(--butterfly-blue);">
+                        <p style="font-size: 1.1rem; color: var(--text); opacity: 0.8;">
+                            With more love than words can express,<br>
+                            <span style="font-family: 'Sacramento', cursive; font-size: 2rem; color: var(--butterfly-purple);">
+                                You Know Who 💝
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 40px;">
+                    <button class="begin-btn" id="restartBtn" style="background: linear-gradient(45deg, var(--butterfly-purple), var(--butterfly-blue));">
+                        <i class="fas fa-redo" style="margin-right: 10px;"></i>
+                        Relive the Magic Again 🦋
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with endless love for Pinki's 21st Birthday | 27.12.2003</p>
+        <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.7;">
+            Every butterfly animation here represents a heartbeat of love for you 🦋💖
+        </p>
+        <p style="margin-top: 5px; font-size: 0.8rem; opacity: 0.5;">
+            - You Know Who
+        </p>
+    </footer>
+
+    <!-- Audio -->
+    <audio id="bgMusic" loop>
+        <source src="https://assets.mixkit.co/music/preview/mixkit-loving-you-117.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="blowSound" src="https://assets.mixkit.co/sfx/preview/mixkit-wind-woosh-1107.mp3"></audio>
+    <audio id="cutSound" src="https://assets.mixkit.co/sfx/preview/mixkit-cutting-something-soft-311.mp3"></audio>
+    <audio id="celebrationSound" src="https://assets.mixkit.co/sfx/preview/mixkit-happy-crowd-laugh-464.mp3"></audio>
+
+    <script>
+        // Create butterfly background
+        function createButterflies() {
+            const container = document.getElementById('butterflyBg');
+            const butterflyCount = 21; // For her 21st birthday
+            
+            for (let i = 0; i < butterflyCount; i++) {
+                const butterfly = document.createElement('div');
+                butterfly.className = 'butterfly';
+                butterfly.innerHTML = '🦋';
+                butterfly.style.left = Math.random() * 100 + 'vw';
+                butterfly.style.top = Math.random() * 100 + 'vh';
+                butterfly.style.fontSize = (Math.random() * 20 + 20) + 'px';
+                butterfly.style.animationDuration = (Math.random() * 10 + 15) + 's';
+                butterfly.style.animationDelay = Math.random() * 5 + 's';
+                butterfly.style.opacity = 0.3 + Math.random() * 0.3;
+                
+                // Random butterfly colors
+                const colors = ['#ff9ec0', '#89CFF0', '#C9A0DC', '#ffd166'];
+                butterfly.style.color = colors[Math.floor(Math.random() * colors.length)];
+                
+                container.appendChild(butterfly);
+            }
+        }
+        
+        // Create birthday cake with candles
+        function createBirthdayCake() {
+            const cakeContainer = document.querySelector('.cake-container');
+            const candleCount = 21; // 21 candles for 21st birthday
+            
+            // Clear any existing candles
+            document.querySelectorAll('.candle, .flame').forEach(el => el.remove());
+            
+            // Create candles
+            for (let i = 0; i < candleCount; i++) {
+                const candle = document.createElement('div');
+                candle.className = 'candle';
+                candle.id = 'candle' + i;
+                
+                // Position candles evenly
+                const angle = (i / candleCount) * 2 * Math.PI;
+                const radius = 100;
+                const x = Math.cos(angle) * radius;
+                
+                candle.style.left = `calc(50% + ${x}px)`;
+                candle.style.transform = `translateX(-50%) rotate(${Math.random() * 10 - 5}deg)`;
+                
+                // Add flame
+                const flame = document.createElement('div');
+                flame.className = 'flame';
+                flame.style.left = candle.style.left;
+                
+                cakeContainer.appendChild(candle);
+                cakeContainer.appendChild(flame);
+            }
+        }
+        
+        // Blow out candles
+        function blowCandles() {
+            const blowSound = document.getElementById('blowSound');
+            blowSound.play();
+            
+            const candles = document.querySelectorAll('.candle');
+            const flames = document.querySelectorAll('.flame');
+            let blownCount = 0;
+            
+            // Blow candles one by one
+            candles.forEach((candle, index) => {
+                setTimeout(() => {
+                    candle.classList.add('blown');
+                    if (flames[index]) {
+                        flames[index].style.display = 'none';
+                        
+                        // Add little smoke puff
+                        const smoke = document.createElement('div');
+                        smoke.style.position = 'absolute';
+                        smoke.style.left = candle.style.left;
+                        smoke.style.top = 'calc(50% - 80px)';
+                        smoke.style.width = '20px';
+                        smoke.style.height = '20px';
+                        smoke.style.background = 'rgba(200, 200, 200, 0.7)';
+                        smoke.style.borderRadius = '50%';
+                        smoke.style.zIndex = '10';
+                        document.querySelector('.cake-container').appendChild(smoke);
+                        
+                        // Animate smoke
+                        setTimeout(() => {
+                            smoke.style.transition = 'all 1s ease';
+                            smoke.style.transform = 'translateY(-30px) scale(2)';
+                            smoke.style.opacity = '0';
+                            setTimeout(() => smoke.remove(), 1000);
+                        }, 10);
+                    }
+                    
+                    blownCount++;
+                    
+                    // When all candles are blown
+                    if (blownCount === candles.length) {
+                        setTimeout(() => {
+                            document.getElementById('cutCakeBtn').style.display = 'inline-block';
+                            document.getElementById('blowBtn').style.display = 'none';
+                            
+                            // Show celebration message
+                            setTimeout(() => {
+                                document.getElementById('wishMessage').classList.add('show');
+                                setTimeout(() => {
+                                    document.getElementById('signature').style.opacity = '1';
+                                }, 1000);
+                            }, 500);
+                        }, 500);
+                    }
+                }, index * 100);
+            });
+            
+            // Create fireworks for celebration
+            createFireworks(20);
+        }
+        
+        // Cut the cake
+        function cutCake() {
+            const cutSound = document.getElementById('cutSound');
+            const celebrationSound = document.getElementById('celebrationSound');
+            
+            cutSound.play();
+            
+            const cake = document.getElementById('birthdayCake');
+            cake.classList.add('cake-cut');
+            
+            // Show cake slice
+            setTimeout(() => {
+                const cakeSlice = document.createElement('div');
+                cakeSlice.style.position = 'absolute';
+                cakeSlice.style.width = '80px';
+                cakeSlice.style.height = '120px';
+                cakeSlice.style.background = 'linear-gradient(to bottom, #f8c8dc, #ff9ec0)';
+                cakeSlice.style.borderRadius = '0 40px 40px 0';
+                cakeSlice.style.bottom = '50px';
+                cakeSlice.style.left = 'calc(50% + 60px)';
+                cakeSlice.style.transform = 'translateX(-50%) rotate(-15deg)';
+                cakeSlice.style.zIndex = '4';
+                cakeSlice.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.2)';
+                document.querySelector('.cake-container').appendChild(cakeSlice);
+                
+                // Celebration
+                celebrationSound.play();
+                createFireworks(50);
+                
+                // Confetti
+                createConfetti();
+            }, 500);
+        }
+        
+        // Create fireworks
+        function createFireworks(count) {
+            const colors = ['#ff9ec0', '#89CFF0', '#C9A0DC', '#ffd166', '#ffffff'];
+            
+            for (let i = 0; i < count; i++) {
+                setTimeout(() => {
+                    const firework = document.createElement('div');
+                    firework.className = 'firework';
+                    firework.style.left = Math.random() * 100 + 'vw';
+                    firework.style.top = Math.random() * 100 + 'vh';
+                    firework.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                    firework.style.boxShadow = `0 0 20px ${firework.style.backgroundColor}`;
+                    document.body.appendChild(firework);
+                    
+                    // Explode animation
+                    setTimeout(() => {
+                        firework.style.transition = 'all 0.5s ease';
+                        firework.style.transform = 'scale(30)';
+                        firework.style.opacity = '0';
+                        setTimeout(() => firework.remove(), 500);
+                    }, 10);
+                }, i * 50);
+            }
+        }
+        
+        // Create confetti
+        function createConfetti() {
+            const container = document.getElementById('confettiContainer') || document.body;
+            const colors = ['#ff9ec0', '#89CFF0', '#C9A0DC', '#ffd166', '#ff7eb3'];
+            
+            for (let i = 0; i < 150; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.position = 'fixed';
+                confetti.style.width = Math.random() * 10 + 5 + 'px';
+                confetti.style.height = Math.random() * 10 + 5 + 'px';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.borderRadius = Math.random() > 0.5 ? '50%' : '0';
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.top = '-10px';
+                confetti.style.opacity = '0';
+                confetti.style.zIndex = '999';
+                container.appendChild(confetti);
+                
+                // Animate
+                const animation = confetti.animate([
+                    { top: '-10px', opacity: 0, transform: 'rotate(0deg)' },
+                    { top: '10px', opacity: 1, transform: 'rotate(180deg)' },
+                    { top: '100vh', opacity: 0, transform: 'rotate(360deg)' }
+                ], {
+                    duration: Math.random() * 3000 + 2000,
+                    delay: Math.random() * 1000
+                });
+                
+                animation.onfinish = () => confetti.remove();
+            }
+        }
+        
+        // Gift box interaction
+        function setupGiftBox() {
+            const giftBox = document.getElementById('giftBox');
+            let isOpen = false;
+            
+            giftBox.addEventListener('click', function() {
+                if (!isOpen) {
+                    this.classList.add('open');
+                    isOpen = true;
+                    
+                    // Create floating hearts from gift
+                    for (let i = 0; i < 10; i++) {
+                        setTimeout(() => {
+                            const heart = document.createElement('div');
+                            heart.innerHTML = '💖';
+                            heart.style.position = 'absolute';
+                            heart.style.left = '50%';
+                            heart.style.top = '50%';
+                            heart.style.fontSize = '24px';
+                            heart.style.transform = 'translate(-50%, -50%)';
+                            heart.style.zIndex = '1000';
+                            heart.style.pointerEvents = 'none';
+                            document.querySelector('.container').appendChild(heart);
+                            
+                            // Animate heart
+                            setTimeout(() => {
+                                heart.style.transition = 'all 1s ease';
+                                heart.style.transform = `translate(${Math.random() * 100 - 50}px, ${Math.random() * 100 - 150}px) scale(1.5)`;
+                                heart.style.opacity = '0';
+                                setTimeout(() => heart.remove(), 1000);
+                            }, 10);
+                        }, i * 200);
+                    }
+                }
+            });
+        }
+        
+        // Countdown to next birthday
+        function setupCountdown() {
+            function updateCountdown() {
+                const now = new Date();
+                const currentYear = now.getFullYear();
+                let nextBirthday = new Date(currentYear, 11, 27); // December 27
+                
+                // If birthday has passed this year, set to next year
+                if (now > nextBirthday) {
+                    nextBirthday.setFullYear(currentYear + 1);
+                }
+                
+                const diff = nextBirthday - now;
+                
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+                
+                document.getElementById('days').textContent = days.toString().padStart(2, '0');
+                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            }
+            
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        }
+        
+        // Love progress bar
+        function updateLoveProgress() {
+            const scrollTop = window.pageYOffset;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            document.getElementById('loveProgress').style.width = scrollPercent + '%';
+        }
+        
+        // Scroll animations
+        function checkVisibility() {
+            const sections = document.querySelectorAll('.section');
+            const memoryMoments = document.querySelectorAll('.memory-moment');
+            
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.8) {
+                    section.classList.add('active');
+                }
+            });
+            
+            memoryMoments.forEach((moment, index) => {
+                const rect = moment.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.8) {
+                    setTimeout(() => {
+                        moment.classList.add('visible');
+                    }, index * 200);
+                }
+            });
+            
+            // Update navigation dots
+            updateNavDots();
+        }
+        
+        // Navigation dots
+        function updateNavDots() {
+            const sections = document.querySelectorAll('.section, .hero');
+            const dots = document.querySelectorAll('.dot');
+            let currentSection = 0;
+            
+            sections.forEach((section, index) => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+                    currentSection = index;
+                }
+            });
+            
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSection);
+            });
+        }
+        
+        // Scroll to section
+        function scrollToSection(index) {
+            const sections = document.querySelectorAll('.section, .hero');
+            if (sections[index]) {
+                sections[index].scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        
+        // Music control
+        function setupMusic() {
+            const musicToggle = document.getElementById('musicToggle');
+            const bgMusic = document.getElementById('bgMusic');
+            let isPlaying = false;
+            
+            // Try to play music on user interaction
+            document.getElementById('beginBtn').addEventListener('click', () => {
+                if (!isPlaying) {
+                    bgMusic.volume = 0.3;
+                    bgMusic.play().then(() => {
+                        isPlaying = true;
+                        musicToggle.innerHTML = '<i class="fas fa-volume-up"></i>';
+                    }).catch(e => console.log("Autoplay prevented:", e));
+                }
+            });
+            
+            musicToggle.addEventListener('click', () => {
+                if (isPlaying) {
+                    bgMusic.pause();
+                    musicToggle.innerHTML = '<i class="fas fa-music"></i>';
+                } else {
+                    bgMusic.play();
+                    musicToggle.innerHTML = '<i class="fas fa-volume-up"></i>';
+                }
+                isPlaying = !isPlaying;
+            });
+        }
+        
+        // Initialize everything
+        document.addEventListener('DOMContentLoaded', function() {
+            createButterflies();
+            createBirthdayCake();
+            setupGiftBox();
+            setupCountdown();
+            setupMusic();
+            
+            // Setup event listeners
+            document.getElementById('blowBtn').addEventListener('click', blowCandles);
+            document.getElementById('cutCakeBtn').addEventListener('click', cutCake);
+            document.getElementById('beginBtn').addEventListener('click', () => scrollToSection(1));
+            document.getElementById('restartBtn').addEventListener('click', () => scrollToSection(0));
+            
+            // Navigation dots
+            document.querySelectorAll('.dot').forEach(dot => {
+                dot.addEventListener('click', () => {
+                    const sectionIndex = parseInt(dot.getAttribute('data-section'));
+                    scrollToSection(sectionIndex);
+                });
+            });
+            
+            // Scroll events
+            window.addEventListener('scroll', () => {
+                updateLoveProgress();
+                checkVisibility();
+            });
+            
+            // Initial setup
+            updateLoveProgress();
+            checkVisibility();
+            
+            // Auto-play music after a moment (with user interaction)
+            setTimeout(() => {
+                document.getElementById('bgMusic').play().catch(() => {
+                    console.log("Waiting for user interaction to play music");
+                });
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
